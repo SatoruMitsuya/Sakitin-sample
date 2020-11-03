@@ -1,0 +1,210 @@
+@charset "utf-8";
+
+/* * {
+    border: dashed magenta 0.1px;
+    //background-color: #ccc;
+} */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    /* 文字の種類を指定します */
+    font-family: "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    color: #630;
+    /* 行間を指定します */
+    line-height: 25px;
+    /* 文字の大きさ */
+    font-size: 0.95em;
+}
+
+h1 {
+    font-size: 0.9em;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 0.9em;
+    margin: 0px 0px 20px 0px;
+}
+
+img {
+    border: 0px;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:link {
+    color: #630;
+}
+
+a:visited {
+    color: #630;
+}
+
+a:hover {
+    color: #630;
+    text-decoration: underline;
+}
+
+a:active {
+    color: #630;
+}
+
+#wrap {
+    /* 領域間余白を0pxに指定し、中央寄せにします */
+    margin: 0 auto;
+    /* 横幅960pxを指定します */
+    width: 960px;
+}
+
+#menu {
+    margin: 0px;
+    padding: 0px;
+}
+
+#menu li {
+    float: left;
+    /* 画像の横の●を非表示にします */
+    list-style: none;
+}
+
+#mainimg {
+    /* 横幅960pxを指定します */
+    width: 960px;
+    /* 縦幅を35pxを指定します */
+    height: 350px;
+    /* 回り込みをさせます */
+    float: left;
+    /* 領域間余白を上方向に10px、下方向に15pxを指定します */
+    margin: 10px 0px 15px 0px;
+}
+
+#contents {
+    /* 横幅615pxを指定します */
+    width: 615px;
+    /* 回り込みをさせます */
+    float: left;
+}
+
+#newsbox {
+    width: 593px;
+    height: auto;
+    /* 境界指定 */
+    border: solid 1px #CCC;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #FFF;
+}
+
+#newsbox p {
+    /* 境界の下方向だけに破線で1pxの　灰色の線を指定します */
+    border-bottom: dashed 1px #CCC;
+}
+
+.contentsbox {
+    width: 593px;
+    height: auto;
+    border: solid 1px #CCC;
+    padding: 10px;
+    margin-bottom: 15px;
+    background-color: #FFF;
+}
+
+.midasi {
+    /* 境界の下方向だけに破線で2pxの色指定した線を指定します */
+    border-bottom: dashed 2px #C30;
+    /* 文字を太字 */
+    font-weight: bold;
+    /* 文字色 */
+    color: #C30;
+    /* 文字のサイズ */
+    font-size: 1.2em;
+}
+
+.imgbox {
+    width: 230px;
+    height: 167px;
+    float: right;
+    /* 領域間余白　上10px 右0px 下10px 左25px */
+    margin: 10px 0px 10px 25px;
+}
+
+.clear {
+    clear: both;
+}
+
+#sidenavi {
+    /* 横幅330pxを指定します */
+    width: 330px;
+    /* 領域間余白（左方向）を15pxを指定します */
+    margin-left: 15px;
+    /* 回り込みをさせます */
+    float: left;
+}
+
+#goannai {
+    font-size: 1.2em;
+    border-bottom: solid 2px #C30;
+    margin: 0px 0px 15px 0px;
+    color: #C30;
+}
+
+.sidebox {
+    width: 330px;
+    height: 130px;
+    margin-bottom: 15px;
+}
+
+footer {
+    /* 回り込みを解除します */
+    clear: both;
+    /* 縦幅を50pxを指定します */
+    height: 50px;
+    /* 要素内余白（上方向）を30pxを指定します */
+    padding-top: 30px;
+    /* テキストを中央寄せにします */
+    text-align: center;
+    /* テキストのフォントサイズを変更します */
+    font-size: 0.85em;
+    /* 背景画像を挿入します */
+    background-image: url(img/footer.gif);
+    /* 背景画像の繰り返しに繰り返し表示なしを指定します */
+    background-repeat: no-repeat;
+    /* ブロック要素として認識させます */
+    display: block;
+}
+
+.minibox {
+    width: 135px;
+    height: 135px;
+    margin: 0px 10px 10px 0px;
+    float: left;
+}
+
+.tablestyle {
+    width: 593px;
+    text-align: left;
+}
+
+.tablestyle td {
+    border-bottom: dashed 1px #CCC;
+}
+
+.tablestyle th {
+    background-color: #630;
+    color: #FFF;
+    text-align: center;
+}
