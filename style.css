@@ -1,8 +1,17 @@
 @charset "utf-8";
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
 /* 
 * {
   border: dashed magenta 0.1px;
-  //background-color: #ccc;
 } */
 
 article,
@@ -68,40 +77,60 @@ a:active {
   /* 領域間余白を0pxに指定し、中央寄せにします */
   margin: 0 auto;
   /* 横幅960pxを指定します */
-  width: 960px;
+  /* width: 960px; */
+  max-width: 960px;
+}
+
+header img {
+  width: 100%;
 }
 
 #menu {
   margin: 0px;
   padding: 0px;
+  display: flex;
 }
 
-#menu li {
-  float: left;
-  /* 画像の横の●を非表示にします */
-  list-style: none;
+#menu img {
+  flex: 1;
+  flex-wrap: nowrap;
+  width: 100%;
 }
 
-#mainimg {
-  /* 横幅960pxを指定します */
-  width: 960px;
-  /* 縦幅を35pxを指定します */
-  height: 350px;
-  /* 回り込みをさせます */
-  float: left;
-  /* 領域間余白を上方向に10px、下方向に15pxを指定します */
+.flex-base {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.main-visual {
+  flex: 1 1 100%;
+}
+
+.main-visual img {
+  display: block;
+  width: 100%;
   margin: 10px 0px 15px 0px;
 }
 
+.main-contents {
+  flex: 2;
+}
+
+.side-contents {
+  flex: 1;
+}
 #contents {
   /* 横幅615pxを指定します */
-  width: 615px;
+  /* width: 615px; */
+  max-width: 615px;
   /* 回り込みをさせます */
-  float: left;
+  /* float: left; */
 }
 
 #newsbox {
-  width: 593px;
+  /* width: 593px; */
+  width: 615px;
+  flex: 1 1 100%;
   height: auto;
   /* 境界指定 */
   border: solid 1px #ccc;
@@ -116,7 +145,9 @@ a:active {
 }
 
 .contentsbox {
-  width: 593px;
+  /* width: 593px; */
+  width: 615px;
+  flex: 1 1 100%;
   height: auto;
   border: solid 1px #ccc;
   padding: 10px;
@@ -143,17 +174,18 @@ a:active {
   margin: 10px 0px 10px 25px;
 }
 
-.clear {
+/* .clear {
   clear: both;
-}
+} */
 
 #sidenavi {
   /* 横幅330pxを指定します */
-  width: 330px;
+  /* width: 330px; */
+  max-width: 330px;
   /* 領域間余白（左方向）を15pxを指定します */
   margin-left: 15px;
   /* 回り込みをさせます */
-  float: left;
+  /* float: left; */
 }
 
 #goannai {
@@ -164,9 +196,14 @@ a:active {
 }
 
 .sidebox {
-  width: 330px;
+  /* width: 330px; */
+  max-width: auto;
   height: 130px;
   margin-bottom: 15px;
+}
+
+.sidebox img {
+  width: 100%;
 }
 
 footer {

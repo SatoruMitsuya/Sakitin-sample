@@ -20,119 +20,124 @@
       </header>
       <!-- メニュー -->
       <nav>
-        <ul id="menu">
-          <li>
-            <a href="index.html">
-              <img src="img/menu_home.gif" alt="ホーム" />
-            </a>
-          </li>
-          <li>
-            <a href="page/menu.html">
-              <img src="img/menu_menu.gif" alt="メニュー" />
-            </a>
-          </li>
-          <li>
-            <a href="page/kodawari.html">
-              <img src="img/menu_quality.gif" alt="こだわり" />
-            </a>
-          </li>
-          <li>
-            <a href="page/tempoannai.html">
-              <img src="img/menu_store.gif" alt="店舗案内" />
-            </a>
-          </li>
-        </ul>
+        <div id="menu">
+          <a href="index.html">
+            <img src="img/menu_home.gif" alt="ホーム" />
+          </a>
+          <a href="page/menu.html">
+            <img src="img/menu_menu.gif" alt="メニュー" />
+          </a>
+          <a href="page/kodawari.html">
+            <img src="img/menu_quality.gif" alt="こだわり" />
+          </a>
+          <a href="page/tempoannai.html">
+            <img src="img/menu_store.gif" alt="店舗案内" />
+          </a>
+        </div>
       </nav>
 
-      <article>
-        <h2>
-          契約農家から直接仕入れた新鮮な素材だけを使い、１つ１つ丁寧に手作りしています。
-        </h2>
-        <!-- メインビジュアル -->
-        <div id="mainimg">
-          <img src="img/mainimg.jpg" alt="さきちんカフェ、メイン画像" />
-        </div>
-        <!-- メインコンテンツ -->
-        <div id="contents">
-          <section>
-            <div id="newsbox">
-              <h3 class="midasi">What's New!</h3>
-              <p>〇〇年/〇〇月/〇〇日｜福岡〇〇店がオープンしました。</p>
-              <p>〇〇年/〇〇月/〇〇日｜福岡天神店がオープンしました。</p>
-              <p>〇〇年/〇〇月/〇〇日｜季節限定メニューを追加しました。</p>
-              <p>〇〇年/〇〇月/〇〇日｜産地情報を更新しました。</p>
+      <div class="flex-base">
+        <main>
+          <article>
+            <div class="main-visual">
+              <h2>
+                契約農家から直接仕入れた新鮮な素材だけを使い、１つ１つ丁寧に手作りしています。
+              </h2>
+              <!-- メインビジュアル -->
+              <img src="img/mainimg.jpg" alt="さきちんカフェ、メイン画像" />
             </div>
-          </section>
 
-          <section>
-            <div class="contentsbox">
-              <h3 class="midasi">安心・安全の素材</h3>
-              <div class="imgbox">
-                <img src="img/anshin.jpg" alt="全て手作りしています" />
+            <!-- メインコンテンツ -->
+            <div class="main-contents">
+              <div id="contents">
+                <section>
+                  <div id="newsbox">
+                    <h3 class="midasi">What's New!</h3>
+                    <p>〇〇年/〇〇月/〇〇日｜福岡〇〇店がオープンしました。</p>
+                    <p>〇〇年/〇〇月/〇〇日｜福岡天神店がオープンしました。</p>
+                    <p>
+                      〇〇年/〇〇月/〇〇日｜季節限定メニューを追加しました。
+                    </p>
+                    <p>〇〇年/〇〇月/〇〇日｜産地情報を更新しました。</p>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="contentsbox">
+                    <h3 class="midasi">安心・安全の素材</h3>
+                    <div class="imgbox">
+                      <img src="img/anshin.jpg" alt="全て手作りしています" />
+                    </div>
+                    <p>
+                      すべてオーダーを受けてから１つ１つ手作りしています。
+                      <br />
+                      素材は契約農家から直接仕入れた、安心・安全の国産素材だけを使用！
+                    </p>
+
+                    <p class="clear">
+                      <a href="page/kodawari.html">詳細ページへ</a>
+                    </p>
+                  </div>
+                </section>
+
+                <section>
+                  <div class="contentsbox">
+                    <h3 class="midasi">店舗案内</h3>
+                    <div class="imgbox">
+                      <img src="img/maps.jpg" alt="店舗案内" />
+                    </div>
+                    <p>
+                      あなたの近くのさきちんカフェはどこ？ <br />
+                      さきちんカフェの店舗案内・情報です。
+                    </p>
+
+                    <p class="clear">
+                      <a href="page/tempoannai.html">詳細ページへ</a>
+                    </p>
+                  </div>
+                </section>
               </div>
-              <p>
-                すべてオーダーを受けてから１つ１つ手作りしています。 <br />
-                素材は契約農家から直接仕入れた、安心・安全の国産素材だけを使用！
-              </p>
-
-              <p class="clear">
-                <a href="page/kodawari.html">詳細ページへ</a>
-              </p>
             </div>
-          </section>
+          </article>
+        </main>
 
-          <section>
-            <div class="contentsbox">
-              <h3 class="midasi">店舗案内</h3>
-              <div class="imgbox">
-                <img src="img/maps.jpg" alt="店舗案内" />
+        <section>
+          <div class="side-contents">
+            <div id="sidenavi">
+              <h2 id="goannai">ご案内</h2>
+              <div class="sidebox">
+                <a href="page/menu.html">
+                  <img src="img/menusyoukai.jpg" alt="メニューのご紹介" />
+                </a>
               </div>
-              <p>
-                あなたの近くのさきちんカフェはどこ？ <br />
-                さきちんカフェの店舗案内・情報です。
-              </p>
+              <div class="sidebox">
+                <a href="page/menu.html">
+                  <img src="img/new.jpg" alt="新メニュー追加のお知らせ" />
+                </a>
+              </div>
+              <div class="sidebox">
+                <a href="page/kodawari.html">
+                  <img src="img/kodawari.jpg" alt="さきちんカフェのこだわり" />
+                </a>
+              </div>
+              <div class="sidebox">
+                <a href="page/tempoannai.html">
+                  <img src="img/tenpoannai.jpg" alt="店舗案内" />
+                </a>
+              </div>
 
-              <p class="clear">
-                <a href="page/tempoannai.html">詳細ページへ</a>
-              </p>
+              <!-- あまり関係のないエリアとしてasideタグを追加 -->
+              <aside>
+                <h2>ご予約やお持ち帰りもＯＫ！</h2>
+                <p>
+                  できたてホカホカ！お電話でのご注文も承っています。ご予約やテイクアウトにどうぞ！詳しくは各店舗までお電話ください。
+                </p>
+              </aside>
             </div>
-          </section>
-        </div>
-      </article>
+          </div>
+        </section>
+      </div>
 
-      <section>
-        <div id="sidenavi">
-          <h2 id="goannai">ご案内</h2>
-          <div class="sidebox">
-            <a href="page/menu.html">
-              <img src="img/menusyoukai.jpg" alt="メニューのご紹介" />
-            </a>
-          </div>
-          <div class="sidebox">
-            <a href="page/menu.html">
-              <img src="img/new.jpg" alt="新メニュー追加のお知らせ" />
-            </a>
-          </div>
-          <div class="sidebox">
-            <a href="page/kodawari.html">
-              <img src="img/kodawari.jpg" alt="さきちんカフェのこだわり" />
-            </a>
-          </div>
-          <div class="sidebox">
-            <a href="page/tempoannai.html">
-              <img src="img/tenpoannai.jpg" alt="店舗案内" />
-            </a>
-          </div>
-
-          <!-- あまり関係のないエリアとしてasideタグを追加 -->
-          <aside>
-            <h2>ご予約やお持ち帰りもＯＫ！</h2>
-            <p>
-              できたてホカホカ！お電話でのご注文も承っています。ご予約やテイクアウトにどうぞ！詳しくは各店舗までお電話ください。
-            </p>
-          </aside>
-        </div>
-      </section>
       <footer>
         <p>COPYRIGHT &#169; さきちんカフェ ALL RIGHTS RESERVED.</p>
       </footer>
