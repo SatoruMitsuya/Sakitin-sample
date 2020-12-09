@@ -103,7 +103,9 @@ header img {
 }
 
 .main-visual {
-  flex: 1 1 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 auto;
 }
 
 .main-visual img {
@@ -119,6 +121,7 @@ header img {
 .side-contents {
   flex: 1;
 }
+
 #contents {
   /* 横幅615pxを指定します */
   /* width: 615px; */
