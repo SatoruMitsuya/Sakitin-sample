@@ -97,15 +97,31 @@ header img {
   width: 100%;
 }
 
-.flex-base {
-  display: flex;
-  flex-wrap: wrap;
+@media screen and (max-width: 600px) {
+  .grid {
+    display: grid;
+    grid-template:
+      "mainimg" auto
+      "main" auto
+      "sidebar" auto /
+      auto;
+    gap: 0px 0px;
+  }
+}
+
+@media screen and (min-width: 601px) {
+  .grid {
+    display: grid;
+    grid-template:
+      "mainimg mainimg" auto
+      "main sidebar" auto /
+      615px 330px;
+    gap: 0px 0px;
+  }
 }
 
 .main-visual {
-  display: flex;
-  flex-wrap: wrap;
-  flex: 1 1 auto;
+  grid-area: mainimg;
 }
 
 .main-visual img {
@@ -115,11 +131,11 @@ header img {
 }
 
 .main-contents {
-  flex: 2;
+  grid-area: main;
 }
 
 .side-contents {
-  flex: 1;
+  grid-area: sidebar;
 }
 
 #contents {
