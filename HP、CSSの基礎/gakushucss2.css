@@ -1,0 +1,219 @@
+/* 未対応ブラウザへのサポート */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+.aka {
+    color: red;
+}
+
+.moji {
+    /* ピクセル指定 */
+    font-size: 12px;
+    /* パーセント指定 */
+    font-size: 90%;
+    /* キーワード指定 */
+    font-size: large;
+}
+
+.font {
+    /* フォントの種類 
+            serif 明朝体 ,
+            sans-serif ゴシック体,
+            cursive 筆記体・続け文字,
+            fantasy 装飾体,
+            monospase 等幅フォント*/
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.futomoji {
+    /* 数値で指定 700でボールドと同じ*/
+    font-weight: 700;
+    /* キーワードで指定 */
+    font-weight: bold;
+}
+
+.sen {
+    /* 取り消し線 */
+    text-decoration: line-through;
+    /* 下線 */
+    text-decoration-line: underline;
+}
+
+
+/* リンクのコントロールをスタイルする */
+
+
+/* 任意項目：標準から変更するときために指定 */
+
+a {
+    font-weight: bold;
+    text-decoration-line: none;
+}
+
+a:link {
+    /*アクセスしたことのないリンク*/
+    color: green;
+}
+
+a:visited {
+    /*アクセスしたことのあるリンク*/
+    color: maroon;
+}
+
+a:hover {
+    /*マウスが上に乗っている状態*/
+    color: pink;
+    text-decoration-line: none;
+}
+
+a:active {
+    /*クリック中*/
+    color: blue;
+}
+
+.text {
+    text-align: center;
+}
+
+
+/* 行間を調整する */
+
+.gyoukan {
+    line-height: 35px;
+}
+
+
+/* 文字間を調整する */
+
+.mojikan {
+    letter-spacing: 5px;
+}
+
+
+/* 単語間の調整(日本語の文章ではうまく機能しない) */
+
+.tangokan {
+    word-spacing: 10px;
+}
+
+
+/* 文字の位置（インデント幅）を調整する */
+
+.indent {
+    text-indent: 25px;
+}
+
+
+/* 背景色を設定する */
+
+.haikei {
+    background-color: #390;
+}
+
+
+/* 画像をページの背景に設定する。 */
+
+body {
+    background-image: url(stripe_b02.gif);
+    /* 横軸にのみ、繰り返して背景画像を表示します。 */
+    background-repeat: repeat-x;
+    /* 縦軸にのみ、繰り返して背景画像を表示します。 */
+    background-repeat: repeat-y;
+    /* 全てに背景画像を表示します。何も指定しなかった場合、こちらが自動的に選択されます。 */
+    background-repeat: repeat;
+}
+
+
+/* 画像などを右・左寄せにしてテキストを回り込みさせるには、floatプロパティ */
+
+.mawarikomi {
+    float: right;
+}
+
+
+/* 回り込みを解除する */
+
+.mawariClear {
+    clear: both;
+    /* left：左寄せされた要素の回り込みを解除します。
+    right：右寄せされた要素の回り込みを解除します。
+    both：右・左共に、すべての要素の回り込みを解除します。 */
+}
+
+
+/* 横幅と縦幅を指定する方法 */
+
+.haba {
+    width: 150px;
+    height: 150px;
+}
+
+.box {
+    width: 150px;
+    height: 200px;
+}
+
+
+/* 余白を調整するスタイル */
+
+
+/* marginは「領域間」の余白を調整します */
+
+.yohakuMargin {
+    margin: 50px;
+    background-color: red;
+}
+
+
+/* paddingは領域内の余白を調整します */
+
+
+/* paddingで余白を設定・調整することによりコンテンツ間に適切な余白を設けたり、文字の飾り付けやレイアウトを調整する際に重宝します。 */
+
+.yohakuPadding {
+    padding: 50px;
+    background-color: red;
+}
+
+
+/* 様々な線を表示する */
+
+.border {
+    border: solid 3px #F00;
+    /*  solid	1本線を表示します。
+        double	2本線を表示します。
+        dashed	破線を表示します。
+        dotted	点線を表示します。
+        groove	立体的な、凹んだ線を表示します。
+        ridge	立体的な、隆起した線を表示します。
+        outset	上と左が明るく、右と下が暗く表示されます。少し立体的に見えます。一部に指定しても立体感は出ません
+        inset	上と左が暗く、右と下が明るく表示されます。少し立体的に見えます。一部に指定しても立体感は出ません。
+        none	何も表示しません。太さの値も0です。 */
+}
+
+
+/* 子セレクタの使い方 */
+
+.sample {
+    color: blue;
+}
+
+.sample li {
+    color: red;
+}

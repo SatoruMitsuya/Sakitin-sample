@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS学習中　表の作成</title>
+    <link rel="stylesheet" href="gakushuCSS3.css">
+</head>
+
+<body>
+    <table class="tableborder">
+        <caption>時間割</caption>
+        <tr>
+            <th>時間</th>
+            <th>教科</th>
+            <th>担任</th>
+            <th>場所</th>
+        </tr>
+        <tr>
+            <td>一時間目</td>
+            <td>国語</td>
+            <td>西田</td>
+            <td>第1教室</td>
+        </tr>
+        <tr>
+            <td>二時間目</td>
+            <td>数学</td>
+            <td>入部</td>
+            <td>第1教室</td>
+        </tr>
+        <tr>
+            <td>三時間目</td>
+            <td>社会</td>
+            <td>野田</td>
+            <td>第2教室</td>
+        </tr>
+
+    </table>
+
+
+    <table class="tableborder" summary="学校の時間割">
+        <caption>時間割</caption>
+        <tr>
+            <th>時間</th>
+            <th>教科</th>
+            <th>担任</th>
+            <th>場所</th>
+        </tr>
+        <tr>
+            <td>一時間目</td>
+            <td>国語</td>
+            <td>西田</td>
+            <td rowspan="2">第1教室</td>
+        </tr>
+        <tr>
+            <td>二時間目</td>
+            <td>数学</td>
+            <td>入部</td>
+            <td>なにか</td>
+        </tr>
+        <tr>
+            <td>三時間目</td>
+            <td>社会</td>
+            <td>野田</td>
+            <td>第2教室</td>
+        </tr>
+        <tr>
+            <td colspan="4">昼休み</td>
+        </tr>
+
+    </table>
+</body>
+
+</html>

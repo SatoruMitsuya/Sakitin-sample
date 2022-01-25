@@ -1,0 +1,61 @@
+/* 
+#wrap（ラップ）の説明 
+これはページ全体の位置とサイズを指定するためのスタイルです。
+横幅が960px、margin（余白）は左右を自動調整しなさい 
+*/
+
+#wrap {
+    width: 960px;
+    margin: auto;
+}
+
+
+/* headerの説明
+borderで点線を付けています
+なお、.（class）や#（id）などは指定していません。
+通常、<header></header>は1ページに1つしか存在しないため、headerタグに直接適用されるようにしています。 */
+
+header {
+    border: dashed 1px #999;
+}
+
+
+/* #contentsの説明
+#contentsは、メインとなるコンテンツボックスです。widthとheightで大きさを指定し、大きな箱を作っています。
+視覚的にわかりやすいよう、borderで点線を付け、ヘッダーとフッターの間に10pxの余白を指定しています。(margin)
+なお、1カラムレイアウトの場合にはfloatを指定する必要はありません。 */
+
+#contents {
+    width: 958px;
+    height: 498px;
+    border: dashed 1px #999;
+    margin: 10px 0px 10px 0px;
+}
+
+
+/* footerの説明
+フッターに適用されるスタイルです。
+視覚的にわかりやすいようにborderで点線を付けています。
+なお、.（class）や#（id）などは指定していません。
+通常、<footer></footer>は1ページに1つしか存在しないため、footerタグに直接適用されるようにしています。*/
+
+
+/* 未対応ブラウザへの対応 */
+
+footer {
+    border: dashed 1px #999;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}

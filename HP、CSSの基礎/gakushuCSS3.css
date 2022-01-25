@@ -1,0 +1,15 @@
+.tableborder {
+    border: solid 1px #666;
+    width: 400px;
+    height: 300px;
+    text-align: center;
+}
+
+.tableborder th {
+    border: solid 1px #666;
+    background-color: #ccc;
+}
+
+.tableborder td {
+    border: solid 1px #666;
+}

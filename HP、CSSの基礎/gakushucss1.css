@@ -1,0 +1,29 @@
+/* 未対応ブラウザへのサポート */
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+
+/* クラスに指定する。 */
+
+.aka {
+    color: red;
+}
+
+
+/* idに指定する。 */
+
+#midori {
+    color: green;
+}

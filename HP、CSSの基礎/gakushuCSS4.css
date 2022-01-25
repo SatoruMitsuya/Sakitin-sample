@@ -1,0 +1,28 @@
+.box1 {
+    width: 148px;
+    height: 148px;
+    border: dashed 1px #FF0000;
+    /* boxを横並びにする（回りこませる） */
+    float: left;
+}
+
+.box2 {
+    width: 148px;
+    height: 148px;
+    border: dashed 1px #FF0000;
+    /* boxを横並びにする（回りこませる） */
+    float: left;
+}
+
+.box3 {
+    width: 148px;
+    height: 148px;
+    border: dashed 1px #FF0000;
+    /* boxを横並びにする（回りこませる） */
+    float: left;
+}
+
+.clear {
+    /*回り込みを解除する*/
+    clear: both;
+}
